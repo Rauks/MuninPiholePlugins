@@ -4,7 +4,7 @@ Munin plugins for monitoring Pi-hole (tested with Pi-hole v3.1.4 - https://pi-ho
 ## Plugins
 * `pihole_queries` show the queries rates (total dns queries and blocked queries/ads rates). The daily graph from this plugin should have a curve pace very similar to the one from the Pi-hole web interface.
 * `pihole_cache` shows the queries cache rates (forwarded and cached queries rates)
-* `pihole_queries` shows the unique clients statistics (counter which is resetted every day). 
+* `pihole_clients` shows the unique clients statistics (counter which is resetted every day). 
 
 ## Configuration
 
