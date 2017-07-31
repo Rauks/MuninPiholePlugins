@@ -18,7 +18,7 @@ stats=$(echo $apicall | sed 's/[{}"]//g' | tr "," "\n")
 case $1 in
   config)
     echo "graph_title Pihole Queries"
-    echo "graph_vlabel count"
+    echo "graph_vlabel queries rate"
     echo "graph_category pihole"
     echo "graph_info This graph shows the Pihole queries statistics."
 
@@ -26,7 +26,7 @@ case $1 in
     do
         uid=$(echo $stat | sed 's/:.*//')
         if [ $uid = "dns_queries_today" ] || [ $uid = "ads_blocked_today" ]; then
-            echo "$uid.label $uid"
+            echo "$uid.label $(echo $uid | sed 's/_today//')"
             echo "$uid.type DERIVE"
             echo "$uid.min 0"
         fi
