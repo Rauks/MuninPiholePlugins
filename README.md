@@ -23,5 +23,23 @@ env.api /admin/api.php
 
 ### Graphs
 
-Soon.
-:wrench: :hammer:
+**Queries graph in Pi-hole:**
+
+![pihole](samples/pihole.png)
+
+**Queries graph in Munin (daily):**
+
+![pihole_queries-day](samples/pihole_queries-day.png)
+
+**Queries graph in Munin (weekly):**
+
+![pihole_queries-week](samples/pihole_queries-week.png)
+
+**Cache graph in Munin (daily):**
+
+![pihole_cache-day](samples/pihole_cache-day.png)
+
+**Clients graph in Munin (weekly):**
+
+![pihole_queries-week](samples/pihole_clients-week.png)
+
